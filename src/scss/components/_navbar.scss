@@ -1,0 +1,12 @@
+@use '../abstracts' as abs;
+
+.navbar {
+  border-bottom: 1px solid abs.$darkBlue;
+
+  &__logo {
+    margin-bottom: 0.9375rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.25rem;
+  }
+}

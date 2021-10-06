@@ -1,0 +1,53 @@
+@use '../abstracts' as abs;
+
+.hero {
+  padding: 1.875rem 0;
+  min-height: calc(100vh - 43.8px - 1.875rem - 1.125rem);
+
+  @include abs.breakpoint(large) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.25rem;
+  }
+
+  &__content {
+    text-align: center;
+    padding: 1.875rem 0;
+
+    @include abs.breakpoint(large) {
+      text-align: left;
+      flex: 1;
+    }
+
+    &--heading {
+      font-size: 1.875rem;
+      font-weight: 700;
+
+      @include abs.breakpoint(large) {
+        font-size: 2.8125rem;
+      }
+    }
+
+    &--paragraph {
+      font-weight: 400;
+      font-size: 1.125rem;
+      margin: 0.875rem 0 1.5625rem 0;
+    }
+  }
+
+  &__img {
+    @include abs.breakpoint(large) {
+      flex: 1;
+    }
+
+    img {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }
+  }
+}
