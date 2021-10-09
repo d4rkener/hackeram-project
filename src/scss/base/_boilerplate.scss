@@ -16,11 +16,23 @@ html {
   font-size: 100%;
 }
 
-body {
+body,
+.bot {
   font-family: abs.$font;
   background-color: abs.$white;
   color: abs.$darkBlue;
   line-height: 1.4;
+}
+
+.bot {
+  background-color: abs.$gray;
+  min-height: 100vh;
+
+  @include abs.breakpoint(large) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 a {

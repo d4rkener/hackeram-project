@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Digital Doctor | Talk With Our Bot</title>
+  </head>
+  <body class="bot">
+    <div class="container">
+      <div class="chat">
+        <div class="chat__header">
+          <i class="fas fa-stethoscope"></i>
+          <h3>Digital Doctor</h3>
+        </div>
+        <div class="chat__messages" id="messageContainer">
+          <div class="chat__messages--message">
+            <p>Hey! Welcome to Digital Doctor.</p>
+          </div>
+          <div class="chat__messages--message">
+            <p>Before beginning the session, tell me your age?</p>
+          </div>
+        </div>
+        <form class="chat__form" id="ageform">
+          <input
+            type="text"
+            placeholder="Enter your search"
+            autocomplete="off"
+            id="ageInput"
+          />
+        </form>
+        <form class="chat__form hide" id="genderForm">
+          <input
+            type="text"
+            placeholder="Enter your search"
+            autocomplete="off"
+            id="genderInput"
+          />
+        </form>
+        <form class="chat__form hide" id="symptomForm">
+          <input
+            type="text"
+            placeholder="Enter your search"
+            autocomplete="off"
+            id="symptomInput"
+          />
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="./src/scripts/main.js"></script>
+  </body>
+</html>
